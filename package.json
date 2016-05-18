@@ -1,0 +1,23 @@
+{
+  "name": "flux-cli",
+  "version": "1.0.0",
+  "description": "CLI for pure flux",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajikaimal/flux-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "flux"
+  ],
+  "author": "rajikaimal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajikaimal/flux-cli/issues"
+  },
+  "homepage": "https://github.com/rajikaimal/flux-cli#readme"
+}
