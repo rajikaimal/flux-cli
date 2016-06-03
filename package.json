@@ -4,6 +4,7 @@
   "description": "CLI for pure flux",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha"
   },
   "repository": {
