@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rajikaimal/flux-cli/issues"
   },
-  "homepage": "https://github.com/rajikaimal/flux-cli#readme"
+  "homepage": "https://github.com/rajikaimal/flux-cli#readme",
+  "dependencies": {
+    "fs.extra": "^1.3.2"
+  }
 }
