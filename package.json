@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "CLI for pure flux",
   "main": "index.js",
+  "bin": {
+    "flux": "./bin/flux"
+  },
   "scripts": {
-    "start": "node index.js",
     "test": "mocha"
   },
   "repository": {
