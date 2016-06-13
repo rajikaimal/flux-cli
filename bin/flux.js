@@ -9,11 +9,38 @@ program
   .action(function(appname){
     console.log('---Initializing flux application: %s', appname);
   }).on('--help', function() {
-    console.log('  Examples:');
-    console.log();
-    console.log('    $ deploy exec sequential');
-    console.log('    $ deploy exec async');
-    console.log();
+    
   });
+
+program
+  .command('action <name>')
+  .alias('i')
+  .description('initialize flux application')
+  .action(function(name){
+    console.log('---creating action: %s', name);
+  }).on('--help', function() {
+  
+  });
+
+program
+  .command('component <name>')
+  .alias('i')
+  .description('initialize flux application')
+  .action(function(name){
+    console.log('---creating component: %s', name);
+  }).on('--help', function() {
+ 
+  });
+
+program
+  .command('store <name>')
+  .alias('i')
+  .description('initialize flux application')
+  .action(function(name){
+    console.log('---creating store: %s', name);
+  }).on('--help', function() {
+ 	
+  });
+
 
 program.parse(process.argv);
