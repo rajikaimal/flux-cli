@@ -14,7 +14,7 @@ program
 
 program
   .command('action <name>')
-  .alias('i')
+  .alias('a')
   .description('initialize flux application')
   .action(function(name){
     console.log('---creating action: %s', name);
@@ -24,7 +24,7 @@ program
 
 program
   .command('component <name>')
-  .alias('i')
+  .alias('c')
   .description('initialize flux application')
   .action(function(name){
     console.log('---creating component: %s', name);
@@ -34,7 +34,7 @@ program
 
 program
   .command('store <name>')
-  .alias('i')
+  .alias('s')
   .description('initialize flux application')
   .action(function(name){
     console.log('---creating store: %s', name);
