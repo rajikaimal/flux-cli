@@ -1,6 +1,7 @@
 #! usr/bin/env node
 var program = require('commander');
 var version = require('../package.json').version;
+var init = require('../lib/init');
 
 program
   .command('init <appname>')
@@ -8,6 +9,7 @@ program
   .description('initialize flux application')
   .action(function(appname){
     console.log('---Initializing flux application: %s', appname);
+    init(appname);
   }).on('--help', function() {
     
   });
