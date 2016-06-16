@@ -1,11 +1,11 @@
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-//var SampleConstants = require('../constants/SampleConstants');
+var AppDispatcher = require('../../dispatcher/AppDispatcher');
+var SampleConstants = require('../../constants/core/constant');
 
 var SampleAction = {
-  invokeSampleAction: function () {
+  invokeCounter: function () {
     //dispatch action
     AppDispatcher.handleViewAction({
-      actionType: SampleConstants.SAMPLE,
+      actionType: SampleConstants.INCREMENT,
       data: 'Sampledata',
     });
   },

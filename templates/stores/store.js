@@ -1,15 +1,15 @@
-var AppDispatcher = require('../dispatcher/AppDispatcher');
+var AppDispatcher = require('../../dispatcher/AppDispatcher');
 var EventEmitter = require('events').EventEmitter;
-var SampleConstants = require('../constants/SampleConstants');
+var SampleConstants = require('../../constants/core/constant');
 var assign = require('object-assign');
 
 var CHANGE_EVENT = 'change';
 
-var sampleArray = [];
+var counter = 0;
 
 var SampleStore = assign({}, EventEmitter.prototype, {
-  doSomething: function (data) {
-    sampleArray.push(data);
+  saveCount: function () {
+    counter++;
   },
 
   emitChange: function () {
@@ -23,8 +23,8 @@ var SampleStore = assign({}, EventEmitter.prototype, {
 
 AppDispatcher.register(function (payload) {
   switch (payload.action.actionType) {
-    case (SampleConstants.SAMPLE):
-      SampleStore.doSomething(payload.action.data);
+    case (SampleConstants.INCREMENT):
+      SampleStore.saveCount();
       SampleStore.emitChange();
       break;
   }
