@@ -35,10 +35,10 @@ alias: s
 Creates a new store flie within the provided module.
 
 ### flux constant [module]:[filename]
-alias: k (k was derived to reflect the constant signature usually used mathematics)  
+alias: k (k was derived to reflect the constant signature usually used in mathematics)  
 Creates a new constant flie within the provided module.
 
-- When creating individual files flux-cli expects you to be in the root of the create project
+- When creating individual files flux-cli expects you to be in the root of the created project
 
 --------
 ### Todos
