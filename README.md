@@ -22,19 +22,19 @@ npm install -g flux-cli
 alias: i  
 Generates a fresh project in current directory.
 
-### flux action <module>:<filename>
+### flux action [module]:[filename]
 alias: a  
 Creates a new action flie within the provided module.
 
-### flux component <module>:<filename>
+### flux component [module]:[filename]
 alias: c  
 Creates a new component flie within the provided module.
 
-### flux store <module>:<filename>
+### flux store [module]:[filename]
 alias: s  
 Creates a new store flie within the provided module.
 
-### flux constant <module>:<filename>
+### flux constant [module]:[filename]
 alias: k (k was derived to reflect the constant signature usually used mathematics)  
 Creates a new constant flie within the provided module.
 
