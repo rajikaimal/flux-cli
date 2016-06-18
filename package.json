@@ -4,7 +4,7 @@
   "description": "CLI for pure flux",
   "main": "index.js",
   "bin": {
-    "flux": "./bin/flux"
+    "flux": "./bin/flux.js"
   },
   "scripts": {
     "test": "mocha"
