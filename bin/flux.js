@@ -2,6 +2,7 @@
 var program = require('commander');
 var version = require('../package.json').version;
 var init = require('../lib/init');
+var initType = require('../lib/type');
 
 program
   .command('init <appname>')
@@ -20,6 +21,10 @@ program
   .description('initialize flux application')
   .action(function(name){
     console.log('---creating action: %s', name);
+    var argArr = name.split(':');
+    var module = argArr[0];
+    var actionName = argArr[1];
+    initType('action', module, actionName);
   }).on('--help', function() {
   
   });
@@ -30,6 +35,10 @@ program
   .description('initialize flux application')
   .action(function(name){
     console.log('---creating component: %s', name);
+    var argArr = name.split(':');
+    var module = argArr[0];
+    var actionName = argArr[1];
+    initType('component', module, actionName);    
   }).on('--help', function() {
  
   });
@@ -40,6 +49,10 @@ program
   .description('initialize flux application')
   .action(function(name){
     console.log('---creating store: %s', name);
+    var argArr = name.split(':');
+    var module = argArr[0];
+    var actionName = argArr[1];
+    initType('store', module, actionName);
   }).on('--help', function() {
  	
   });
