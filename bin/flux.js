@@ -57,5 +57,19 @@ program
  	
   });
 
+program
+  .command('constant <name>')
+  .alias('k')
+  .description('initialize flux application')
+  .action(function(name){
+    console.log('---creating constant: %s', name);
+    var argArr = name.split(':');
+    var module = argArr[0];
+    var actionName = argArr[1];
+    initType('constant', module, actionName);
+  }).on('--help', function() {
+  
+  });
+
 
 program.parse(process.argv);
