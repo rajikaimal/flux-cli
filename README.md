@@ -18,7 +18,7 @@ npm install -g flux-cli
 * constant
 
 --------
-#### flux init <projectname>
+### flux init [projectname]
 alias: i  
 Generates a fresh project in current directory.
 
