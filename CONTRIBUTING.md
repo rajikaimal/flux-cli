@@ -1,7 +1,7 @@
 # Contributing to flux-cli
 
 ## Pull Requests
-Pull requests are actively welcome.
+Pull requests are always welcome.
 
 1. Fork the repo and create your branch from `master`.
 2. If you've added code that should be tested, add tests
