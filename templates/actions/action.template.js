@@ -1,5 +1,5 @@
-var AppDispatcher = require('../../dispatcher/AppDispatcher');
-var <>Constants = require('../../constants/core/<>constant');
+import AppDispatcher from '../../dispatcher/AppDispatcher';
+import <>Constants '../../constants/core/<>constant';
 
 var <> = {
   invokeCounter: function () {
@@ -11,4 +11,4 @@ var <> = {
   },
 };
 
-module.exports = <>;
+export default <>;
