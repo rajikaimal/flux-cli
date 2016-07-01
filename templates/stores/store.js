@@ -1,13 +1,13 @@
-var AppDispatcher = require('../../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
-var SampleConstants = require('../../constants/core/constant');
-var assign = require('object-assign');
+import AppDispatcher from '../../dispatcher/AppDispatcher';
+import { EventEmitter } from 'events';
+import SampleConstants from '../../constants/core/constant';
+import assign from 'object-assign';
 
-var CHANGE_EVENT = 'change';
+const CHANGE_EVENT = 'change';
 
-var counter = 0;
+let counter = 0;
 
-var SampleStore = assign({}, EventEmitter.prototype, {
+const SampleStore = assign({}, EventEmitter.prototype, {
   saveCount: function () {
     counter++;
   },
@@ -30,4 +30,4 @@ AppDispatcher.register(function (payload) {
   }
 });
 
-module.exports = SampleStore;
+export default SampleStore;

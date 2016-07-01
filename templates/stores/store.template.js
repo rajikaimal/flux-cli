@@ -1,11 +1,11 @@
-var AppDispatcher = require('../../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
-var <>Constants = require('../../constants/core/<>constant');
-var assign = require('object-assign');
+import AppDispatcher from '../../dispatcher/AppDispatcher';
+import { EventEmitter } from 'events';
+import <>Constants from '../../constants/core/<>constant';
+import assign from 'object-assign';
 
-var CHANGE_EVENT = 'change';
+const CHANGE_EVENT = 'change';
 
-var <>Store = assign({}, EventEmitter.prototype, {
+const <>Store = assign({}, EventEmitter.prototype, {
   <>Method: function () {
     console.log('invoked !!!');
   },
@@ -28,4 +28,4 @@ AppDispatcher.register(function (payload) {
   }
 });
 
-module.exports = <>Store;
+export default <>Store;

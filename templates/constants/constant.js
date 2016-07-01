@@ -1,5 +1,7 @@
-var keyMirror = require('keymirror');
+import keyMirror from 'keymirror';
 
-module.exports = keyMirror({
+const constants = keyMirror({
     INCREMENT: null,
 });
+
+export default constants;
