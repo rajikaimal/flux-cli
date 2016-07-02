@@ -1,4 +1,4 @@
-# flux-cli
+# flux-cli [![npm version](https://badge.fury.io/js/flux-cli.svg)](https://badge.fury.io/js/flux-cli)
 
 ## What's flux-cli
 flux-cli is a CLI (command line interface) for pure implementation of [flux](https://facebook.github.io/flux/) architecture.
