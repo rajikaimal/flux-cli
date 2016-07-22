@@ -10,4 +10,4 @@ Pull requests are always welcome.
 5. Make sure your code lints.
 
 ## Issues
-Use Github issues section in the original flux-cli repository to report any issues regarding the source code or documentation.
+Use Github [issues](https://github.com/rajikaimal/flux-cli/issues) section in the original flux-cli repository to report any issues regarding the source code or documentation.
