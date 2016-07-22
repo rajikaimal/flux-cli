@@ -47,7 +47,7 @@ Creates a new constant flie within the provided module.
  - Create individual files without the need of an existing module.
 
 ### Contributing guide
- - Use guildelines provided in [CONTRUBUTING.md](https://github.com/rajikaimal/flux-cli/blob/master/CONTRIBUTING.md)
+ - Use guidelines provided in [CONTRUBUTING.md](https://github.com/rajikaimal/flux-cli/blob/master/CONTRIBUTING.md)
 
 License
 ----
