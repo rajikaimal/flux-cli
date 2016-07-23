@@ -1,5 +1,5 @@
 import AppDispatcher from '../../dispatcher/AppDispatcher';
-import <>Constants '../../constants/core/<>constant';
+import <>Constants from '../../constants/core/<>constant';
 
 var <> = {
   invokeCounter: function () {
