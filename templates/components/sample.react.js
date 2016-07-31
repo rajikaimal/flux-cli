@@ -13,6 +13,10 @@ const SampleComponent = React.createClass({
     },
     componentWillUnmount: function () {
         //cleanup code comes here
+        CounterStore.removeChangeListener(this._cleanup);
+    },
+    _cleanup: function() {
+        
     },
     _onChange: function() {
         this.setState({
