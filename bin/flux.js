@@ -3,6 +3,7 @@ var program = require('commander');
 var chalk = require('chalk');
 var version = require('../package.json').version;
 var init = require('../lib/init');
+var initModule = require('../lib/initModule');
 var initType = require('../lib/type');
 
 var clr = chalk.bold.cyan;
@@ -65,5 +66,15 @@ program
     initType('constant', module, actionName);
   });
 
+program
+  .command('module <name>')
+  .alias('m')
+  .description('create a module')
+  .action(function(name){
+    console.log(clr('Creating module: %s'), name);
+    var argArr = name.split(':');
+    var moduleName = argArr[0];
+    initType(moduleName);
+  });
 
 program.parse(process.argv);
