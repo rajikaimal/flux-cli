@@ -36,7 +36,7 @@
     "css-loader": "^0.28.11",
     "envify": "^4.1.0",
     "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-react": "^7.14.3",
     "esprima-fb": "^15001.1001.0-dev-harmony-fb",
     "jscs": "^3.0.7",
     "node-sass": "^4.9.0",
