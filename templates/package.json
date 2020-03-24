@@ -40,6 +40,6 @@
     "esprima-fb": "^15001.1001.0-dev-harmony-fb",
     "jscs": "^3.0.7",
     "node-sass": "^4.9.0",
-    "webpack": "^4.12.0"
+    "webpack": "^4.42.1"
   }
 }
