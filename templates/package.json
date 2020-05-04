@@ -39,7 +39,7 @@
     "eslint-plugin-react": "^7.9.1",
     "esprima-fb": "^15001.1001.0-dev-harmony-fb",
     "jscs": "^3.0.7",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.14.1",
     "webpack": "^4.12.0"
   }
 }
